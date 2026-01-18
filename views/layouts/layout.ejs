@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%= locals.description %>">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script type="text/javascript" src="/scripts/script.js" defer></script>
+    <title><%= locals.title %></title>
+</head>
+<body>
+    <%- include('./components/layout_search.ejs') %>
+    <div class="container">
+        <%- include('./components/layout_header.ejs') %>
+            <main class="main">
+                <%- body %>
+            </main>
+        <%- include('./components/layout_footer.ejs') %>
+    </div>
+</body>
+</html>
